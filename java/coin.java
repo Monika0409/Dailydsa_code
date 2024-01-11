@@ -10,20 +10,14 @@ class Codechef
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
 		for(int i=0; i<t; i++){
-		    int x = sc.nextInt();
-		    int y = sc.nextInt();
-		    int z = sc.nextInt();
-		    if(z > (x*y)/2){
-		        System.out.println("yes");
+		    int x =sc.nextInt();
+		    int y =sc.nextInt();
+		    if(x*y<100){
+		        System.out.println(0);
 		    }
 		    else{
-		        System.out.println("no");
+		        System.out.println((x*y)/100);
 		    }
 		}
 	}
 }
-
-
-
-
-
