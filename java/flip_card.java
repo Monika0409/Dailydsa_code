@@ -12,15 +12,15 @@ class Codechef
 		for(int i=0; i<t; i++){
 		    int n = sc.nextInt();
 		    int x = sc.nextInt();
-		    
-		    if(n%6==0){
-		        System.out.println((n/6)*x);
+		    if(n-x==n || n-x==0){
+		        System.out.println("0");
+		    }
+		    else if((n-x)>=x){
+		        System.out.println(x);
 		    }
 		    else{
-		        System.out.println(((n/6)+1)*x);
+		        System.out.println(n-x);
 		    }
 		}
 	}
 }
-
-

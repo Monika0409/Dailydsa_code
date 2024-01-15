@@ -11,16 +11,17 @@ class Codechef
 		int t = sc.nextInt();
 		for(int i=0; i<t; i++){
 		    int n = sc.nextInt();
-		    int x = sc.nextInt();
+		    int m = sc.nextInt();
 		    
-		    if(n%6==0){
-		        System.out.println((n/6)*x);
+		    if(m>=n){
+		        System.out.println(n);
+		    }
+		    else if(m==0){
+		        System.out.println(n*2);
 		    }
 		    else{
-		        System.out.println(((n/6)+1)*x);
+		        System.out.println(n+(n-m));
 		    }
 		}
 	}
 }
-
-

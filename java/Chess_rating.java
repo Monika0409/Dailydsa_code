@@ -10,17 +10,16 @@ class Codechef
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
 		for(int i=0; i<t; i++){
-		    int n = sc.nextInt();
 		    int x = sc.nextInt();
+		    int y = sc.nextInt();
 		    
-		    if(n%6==0){
-		        System.out.println((n/6)*x);
+		   
+		    if((y-x)%8 == 0){
+		        System.out.println((y-x)/8);
 		    }
 		    else{
-		        System.out.println(((n/6)+1)*x);
+		        System.out.println((y-x)/8 + 1);
 		    }
 		}
 	}
 }
-
-

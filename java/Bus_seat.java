@@ -11,16 +11,19 @@ class Codechef
 		int t = sc.nextInt();
 		for(int i=0; i<t; i++){
 		    int n = sc.nextInt();
-		    int x = sc.nextInt();
-		    
-		    if(n%6==0){
-		        System.out.println((n/6)*x);
+		    if(n<=10){
+		        System.out.println("Lower Double");
+		    }
+		    else if(n>10 && n<=15){
+		        System.out.println("Lower Single");
+		    }
+		    else if(n>15 && n<=25){
+		        System.out.println("Upper Double");
 		    }
 		    else{
-		        System.out.println(((n/6)+1)*x);
+		        System.out.println("Upper Single");
 		    }
 		}
 	}
 }
-
 

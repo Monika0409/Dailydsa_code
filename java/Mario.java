@@ -10,17 +10,16 @@ class Codechef
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
 		for(int i=0; i<t; i++){
-		    int n = sc.nextInt();
 		    int x = sc.nextInt();
-		    
-		    if(n%6==0){
-		        System.out.println((n/6)*x);
+		    if(x%3 == 1){
+		        System.out.println("Huge");
+		    }
+		    else if(x%3 == 2){
+		        System.out.println("Small");
 		    }
 		    else{
-		        System.out.println(((n/6)+1)*x);
+		         System.out.println("Normal");
 		    }
 		}
 	}
 }
-
-
